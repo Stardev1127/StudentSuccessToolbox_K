@@ -1,0 +1,134 @@
+
+/* Header Image */
+#header {
+    background: url("../images/header.jpg") no-repeat scroll 0 0;
+    height: 233px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+
+.header-heading{
+    color: $font-color-dark-bg;
+    font-size: 1em;
+    margin: 42px 0 0 393px;
+    width: 340px;
+    float: left;
+}
+
+#header{
+    &.tool{
+        .header-heading {
+           color: #3873b6;
+           font-size: 1em;
+           margin: 0 auto;
+           width: 380px;
+           float: none; 
+           padding-top: 30px;
+           padding-left: 40px;
+        }
+
+        .line{
+           color: #08a7cd;
+           font-size: 45px;
+           font-weight: normal;
+           letter-spacing: -3px;
+           line-height: 1em;
+           margin: 0;
+           display:block;
+        }
+
+        .line1{
+
+        }
+        .line2{
+            margin-left: 25px;
+            font-size: 85px;
+            text-transform: uppercase; 
+        }
+
+        .line3{
+            font-size: 85px; 
+        }
+    }
+    &.tool1{
+        background: url("../images/headers/header-tool1.jpg") no-repeat scroll 0 0;
+    }
+    &.tool2{
+        background: url("../images/headers/header-tool2.jpg") no-repeat scroll 0 0;
+    }
+    &.tool3{
+        background: url("../images/headers/header-tool3.jpg") no-repeat scroll 0 0;
+    }
+    &.tool4{
+        background: url("../images/headers/header-tool1.jpg") no-repeat scroll 0 0;
+    }
+    &.tool5{
+        background: url("../images/headers/header-tool2.jpg") no-repeat scroll 0 0;
+    }
+    &.tool8{
+        background: url("../images/headers/header-tool3.jpg") no-repeat scroll 0 0;
+    }
+}
+
+#header .example{
+    .word {
+        font-size: 5em;
+        letter-spacing: -2px;
+        font-weight: $bold;
+        margin: 0;
+        transform: scale(1, 1.5);
+        line-height: normal;
+    }
+} 
+
+
+//Mobile Heading
+.mob-heading {
+    background: $secondary-color none repeat scroll 0 0;
+    border-radius: 8px;
+    color: $font-color-dark-bg;
+    float: none;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width:$screen-tablet) {
+    #header {
+            background: rgba(0, 0, 0, 0) url("../images/header-sm.jpg") no-repeat scroll 0 0;
+            height: 233px;
+    }
+    
+}
+
+
+
+
+.center-block {
+	float: none;
+	margin: 0 auto;
+}
+
+.heading-text {
+    font-size: 1.5em;
+}
+.heading-text-big {
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: $bold;
+}
+
+/* feedback page -------------------------- */
+
+
+.interpret .heading {
+	margin: 2em 0;
+}
+.interpret h1 {
+    text-align: center;
+	margin: 0;
+}
+
+
+

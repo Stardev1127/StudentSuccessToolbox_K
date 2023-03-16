@@ -1,0 +1,475 @@
+//**================== Tool3 Hub page
+
+.hub-nav {
+    position:relative;
+    max-width: 600px;
+    margin: 0 auto;
+
+    a {
+        line-height: inherit;
+        outline:none;
+        &:hover{
+            text-decoration: none;
+            color:transparent;
+        }
+    }
+
+}
+
+.hub-button-bg {
+    background-color: #e8e8e8;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 50% 0;
+    width:100%;
+}
+
+
+
+.hub-button {
+    border: 3px solid #fff;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    margin-left: -75px;
+    position:relative;
+    text-align: center;
+    
+    p {
+        bottom: 0.8em;
+        position: absolute;
+        color: #fff;
+        font-family: comic sans ms;
+        font-size: 1.8em;
+        font-weight: 600;
+        left: 0;
+        line-height: 1em;
+        right: 0;
+        text-align: center;
+        text-shadow: 3px 0 3px #999;
+    }
+    
+    &:before {
+        line-height: 1em;
+        color: rgba(255,255,255,0.3);
+        display: block;
+        font-family: FontAwesome;
+        position: relative;
+        z-index:1;
+        -webkit-transition:all 0.2s ease-in;
+        -moz-transition:all 0.2s ease-in;
+        transition:all 0.2s ease-in; 
+    }
+    
+    &:after {
+        content: '';
+        border: 3px solid #cadce0;
+        border-radius: 100%;
+        /*box-shadow: 3px 2px 4px #ddd;*/
+        height: 156px;
+        width: 156px;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        display: block;
+        z-index: 2000;
+    }
+    
+    &:hover:before {
+        color: rgba(255,255,255,0.5);
+        transform: scale(1.1);
+    }
+    
+    //Others
+    &.button-others {
+        background-color: #e3d754;    
+    
+        &:before {
+            content:"\f128";
+            font-size: 9em;
+        }
+    }
+    //Friends
+    &.button-friends {
+        background-color: #08a7cd;
+    
+        &:before {
+            content:"\f0c0";
+            font-size: 7em;
+            top: 20px;
+        }
+    }
+    
+    //Family
+    &.button-family {
+        background-color: #38b6b2;
+    
+        &:before {
+            content:"\f015";
+            font-size: 8em;
+            top: 2px;
+        }
+    }
+    
+    //Students
+    &.button-students {
+        background-color: #a5b638;
+    
+        &:before {
+            content:"\f19d";
+            font-size: 7em;
+            top: 20px;
+        }
+    }
+    
+    
+    //Me
+    &.button-me {
+        background: transparent;
+        border: medium none;
+        margin-top: -100px;
+        margin-left: -100px;
+        margin-right: 0;
+        width: 200px;
+        height: 200px;
+
+        p{
+            bottom: 0.4em;
+            font-size: 4em;
+            font-weight: 400;
+        }
+    
+        &:before {
+            content:"\f007";
+            font-size: 7em;
+            color: #fff;
+            top:20px;
+        }
+        &:hover:before {
+            color: rgba(255,255,255,0.5);
+            transform: scale(1);
+        }
+        &:after {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    &.button-me-shadow {
+        border: medium none !important;
+        box-shadow: none !important;  
+    }
+    
+    //Employer
+    &.button-employer {
+        background-color: #3873b6;
+    
+        &:before {
+            content:"\f0b1";
+            font-size: 7em;
+            top: 20px;
+        }
+    }
+    
+    //University
+    &.button-university {
+        background-color: #c87676;
+        
+        &:before {
+            content:"\f19c";
+            font-size: 7em;
+            top: 10px;
+        }
+    }
+    
+    &.button-gray {
+        margin: 0 auto;
+        background-color: #a6a6a6;
+        margin-bottom: 20px;
+        
+        p{
+          bottom: auto;
+          top: 45px;
+        }
+    }
+    
+    .shadow-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 100%;
+        overflow:hidden;
+        width: 150px;
+        height: 150px;
+        
+        .transparent-shadow{
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            position:relative;
+            left: 50px;
+            top: 80px;
+            
+            
+        }
+    }
+}
+ 
+.pos-12 {
+    position:absolute;
+    top: 3%;
+    left:50%;
+}
+
+.pos-2 {
+    position:absolute;
+    top: 20%;
+    right: 6%;
+}
+
+.pos-3 {
+    position:absolute;
+    top: 38%;
+    right: 15%;
+    .hub-button {
+        margin-left: 0 !important;
+        margin-right: -75px;
+    }
+}
+
+.pos-4 {
+    position:absolute;
+    bottom: 20%;
+    right: 6%;
+}
+
+.pos-6 {
+    position:absolute;
+    bottom: 3%;
+    left: 50%;
+}
+
+.pos-8 { 
+    position:absolute;
+    bottom: 20%;
+    left: 6%;
+    .hub-button {
+        margin-left: 0 !important;
+        margin-right: -75px;
+    }
+}
+
+.pos-9 {
+    position:absolute;
+    bottom: 38%;
+    left: 4%;
+    .hub-button {
+        margin-left: 0 !important;
+        margin-right: -75px;
+    }
+}
+
+.pos-10 {
+    position:absolute;
+    top: 20%;
+    left: 6%;
+    .hub-button {
+        margin-left: 0 !important;
+        margin-right: -75px;
+    }
+    
+}
+
+.pos-center {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+   
+}
+
+/* For desktop (md) Circles need to be smaller so that they to not overlap. */
+.hub-button {
+    
+    $hub-width:  130px;
+    $hub-height:  130px;
+    
+    @media(min-width:$screen-md-min) and (max-width:$screen-md-max){
+        width: $hub-width;
+        height: $hub-height;
+        margin-left: -($hub-width / 2);
+        
+        p{
+           font-size: 1.6em; 
+        }
+        
+        &:after {
+            height: ($hub-width + 6);
+            width: ($hub-height + 6);
+        }
+        
+        //Others
+        &.button-others:before {
+            font-size: 8em;
+        }
+        
+        //Friends
+        &.button-friends:before {
+            font-size: 8em;
+            top: 10px;
+        }
+        
+         //family
+        &.button-family:before {
+            font-size: 8em;
+            top: 10px;
+        }
+        
+         //family
+        &.button-students:before {
+            font-size: 8em;
+            top: 10px;
+        }
+        
+        &.button-me {
+            background-color: #a6a6a6;
+            border: medium none;
+            margin-top: -($hub-width / 2);
+            margin-left: -($hub-width / 2);
+            width: $hub-width;
+            height: $hub-height;
+            
+            p{
+                bottom: 0.4em;
+                font-size: 2em;
+                font-weight: 400;
+            }
+            &:before {
+                font-size: 8em;
+                top: 10px;
+            }
+
+        }
+        
+        //Employer
+        &.button-employer:before {
+            font-size: 8em;
+            top: 10px;
+        }
+    
+        //University
+        &.button-university:before {
+            font-size: 8em;
+            top: 5px;
+        }
+        
+        .shadow-container{
+            width: $hub-width;
+            height: $hub-height;
+
+            .transparent-shadow{
+                background-color: rgba(255, 255, 255, 0.25);
+                border-radius: 100%;
+                width: 180px;
+                height: 180px;
+                position:relative;
+                left: 50px;
+                top: 60px;
+
+
+            }
+        }
+
+    }
+    
+    /* Mobile Screen size: Circles need to be smaller */
+     @media(max-width:$screen-phone){
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+        
+        p{
+           font-size: 1em; 
+        }
+        
+        &:after {
+            height: 86px;
+            width: 86px;
+        }
+        
+        //Others
+        &.button-others:before {
+            font-size: 4.5em;
+        }
+        
+        //Friends
+        &.button-friends:before {
+            font-size: 4em;
+            top: 10px;
+        }
+        
+         //family
+        &.button-family:before {
+            font-size: 4em;
+            top: 10px;
+        }
+        
+         //family
+        &.button-students:before {
+            font-size: 4em;
+            top: 10px;
+        }
+        
+        &.button-me {
+            background-color: #a6a6a6;
+            border: medium none;
+            margin-top: -40px;
+            margin-left: -40px;
+            width: 80px;
+            height: 80px;
+            
+            p{
+                bottom: 0.4em;
+                font-size: 2em;
+                font-weight: 400;
+            }
+            &:before {
+                font-size: 4em;
+                top: 10px;
+            }
+
+        }
+        
+        //Employer
+        &.button-employer:before {
+            font-size: 4em;
+            top: 10px;
+        }
+    
+        //University
+        &.button-university:before {
+            font-size: 4em;
+            top: 5px;
+        }
+        
+        .shadow-container{
+            width: 80px;
+            height: 80px;
+
+            .transparent-shadow{
+                background-color: rgba(255, 255, 255, 0.25);
+                border-radius: 100%;
+                width: 100px;
+                height: 100px;
+                position:relative;
+                left: 30px;
+                top: 40px;
+
+
+            }
+        }
+
+    }
+}
